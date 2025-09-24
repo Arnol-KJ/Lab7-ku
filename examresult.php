@@ -5,7 +5,7 @@
     header("Access-Control-Max-Age: 3600");
     header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
-    $link = mysqli_connect('localhost:3306', 'arnol', '161048', 'examcount');
+    $link = mysqli_connect('localhost', 'user', 'password', 'Database');
     mysqli_set_charset($link, 'utf8');
     $requestMethod = $_SERVER["REQUEST_METHOD"];
 
